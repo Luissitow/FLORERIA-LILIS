@@ -303,37 +303,64 @@ body, p, .content {
 }
 
 .flower-loader {
+    position: relative;
     width: 100px;
     height: 100px;
-    position: relative;
-    animation: rotate 2s infinite linear;
+    margin: 0 auto 20px;
 }
 
 .petal {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    background: var(--primary-color);
-    border-radius: 50% 50% 0 50%;
-    transform-origin: 100% 100%;
+    width: 40px;
+    height: 40px;
+    background: var(--secondary-color);
+    border-radius: 50% 0;
+    transform-origin: 0 100%;
+    animation: petalFade 2s infinite;
+    box-shadow: 0 0 10px rgba(161, 37, 89, 0.2);
 }
 
-.petal1 { transform: rotate(0deg); }
-.petal2 { transform: rotate(72deg); }
-.petal3 { transform: rotate(144deg); }
-.petal4 { transform: rotate(216deg); }
-.petal5 { transform: rotate(288deg); }
+.petal1 { transform: rotate(0deg); animation-delay: 0s; }
+.petal2 { transform: rotate(72deg); animation-delay: 0.2s; }
+.petal3 { transform: rotate(144deg); animation-delay: 0.4s; }
+.petal4 { transform: rotate(216deg); animation-delay: 0.6s; }
+.petal5 { transform: rotate(288deg); animation-delay: 0.8s; }
 
-@keyframes rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+@keyframes petalFade {
+    0%, 100% { 
+        opacity: 1;
+        background: var(--secondary-color);
+        transform: scale(1) rotate(0);
+    }
+    50% { 
+        opacity: 0.7;
+        background: var(--primary-color);
+        transform: scale(1.1) rotate(5deg);
+    }
 }
 
 .loading-text {
-    margin-top: 20px;
     color: var(--primary-color2);
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px var(--white-color),
+                -1px -1px 2px var(--white-color),
+                1px -1px 2px var(--white-color),
+                -1px 1px 2px var(--white-color);
+    animation: textPulse 2s infinite;
+}
+
+@keyframes textPulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.02);
+    }
 }
 
 /* Eliminar fondos negros y ajustar colores */
