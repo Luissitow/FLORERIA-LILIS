@@ -1,310 +1,708 @@
-/* Lili's Florería Custom Styles */
 :root {
-    /* Colores principales */
-    --primary-light: #f1bbd5;
-    --primary-dark: #a12559;
-    --white: #ffffff;
-    
-    /* Colores secundarios */
-    --secondary-lightest: #fae5ef;
-    --secondary-medium: #e891bb;
-    --secondary-intense: #ca2f70;
+    --primary-color: #ca2f70;
+    --primary-color2: #a12559;
+    --primary-color3: #e891bb;
+    --secondary-color: #f1bbd5;
+    --secondary-color2: #fae5ef;
+    --white-color: #ffffff;
+    --dark-color: #2c1821;
+    --background-color: #fff9fb;
 }
 
-/* Reset de colores del tema original */
-body {
-    background-color: var(--white);
-    color: var(--primary-dark);
-}
-
-/* Header y Navegación */
-#header_main {
-    background-color: var(--white);
-    box-shadow: 0 2px 10px rgba(161, 37, 89, 0.1);
-}
-
-.menu-item a {
-    color: var(--primary-dark) !important;
-}
-
-.menu-item a:hover {
-    color: var(--secondary-intense) !important;
-}
-
-.menu-item.current-menu-item > a {
-    color: var(--secondary-intense) !important;
-}
-
-/* Botones */
+/* Botones principales */
 .tf-button {
-    background: var(--primary-dark) !important;
-    color: var(--white) !important;
-    border: none !important;
-    transition: all 0.3s ease;
+    background-color: var(--primary-color) !important;
+    color: var(--white-color) !important;
 }
 
 .tf-button:hover {
-    background: var(--secondary-intense) !important;
-    transform: translateY(-2px);
+    background-color: var(--primary-color2) !important;
 }
 
-/* Preloader personalizado con tema floral */
+.tf-button.active {
+    background-color: var(--primary-color) !important;
+    color: var(--white-color) !important;
+}
+
+/* Menú y navegación */
+#header_main {
+    background-color: var(--white-color);
+}
+
+.main-nav > ul > li > a {
+    color: var(--primary-color2) !important;
+    font-weight: 500;
+}
+
+.main-nav > ul > li > a:hover {
+    color: var(--primary-color) !important;
+}
+
+.main-nav > ul > li.current-menu-item > a {
+    color: var(--primary-color);
+}
+
+/* Títulos y textos */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color2);
+    text-shadow: none;
+}
+
+.tf-title {
+    color: var(--primary-color2) !important;
+    font-weight: 600;
+}
+
+/* Fondos y bordes */
+.bg-primary {
+    background-color: var(--primary-color3) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+
+/* Enlaces */
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--primary-color2);
+}
+
+/* Elementos especiales */
+.featured-countdown {
+    background-color: var(--secondary-color2);
+}
+
+/* Botón de Hacer Pedido */
+#connectbtn {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+#connectbtn:hover {
+    background-color: var(--primary-color2) !important;
+    border-color: var(--primary-color2) !important;
+}
+
+/* Secciones principales */
+.flat-pages-title {
+    background-color: var(--secondary-color2);
+}
+
+.flat-pages-title h1 {
+    color: var(--primary-color2);
+}
+
+/* Mejorar contraste en el texto del banner */
+.flat-pages-title .content p {
+    color: var(--dark-color);
+    font-weight: 400;
+    font-size: 1.1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Menú móvil */
+.mobile-button {
+    background-color: var(--primary-color);
+}
+
+.mobile-nav-wrap {
+    background-color: var(--white-color);
+}
+
+.mobile-nav-wrap .main-nav > ul > li > a {
+    color: var(--primary-color2);
+}
+
+/* Cambiar fondos oscuros */
+body.body {
+    background-color: var(--background-color);
+}
+
+.bg-dark, [class*="dark-bg"] {
+    background-color: var(--background-color) !important;
+}
+
+/* Cambiar elementos amarillos/neón */
+.tf-button.active {
+    background-color: var(--primary-color) !important;
+    color: var(--white-color) !important;
+}
+
+.menu li.current-menu-item > a,
+.bg-primary-color {
+    color: var(--primary-color) !important;
+}
+
+/* Estilo para la sección de pasos */
+.step-number {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.step-title {
+    color: var(--primary-color2);
+}
+
+.step-description {
+    color: var(--dark-color);
+    font-weight: 400;
+}
+
+/* Cambiar colores de scroll y elementos destacados */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-color2);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color3);
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* Asegurarnos que el scroll horizontal también use los mismos colores */
+::-webkit-scrollbar-corner {
+    background: var(--secondary-color2);
+}
+
+/* Arreglar cualquier scroll amarillo en elementos específicos */
+.swiper-scrollbar,
+.scroll-element,
+[class*="scroll"] {
+    background-color: var(--secondary-color2) !important;
+}
+
+.swiper-scrollbar-drag,
+.scroll-bar,
+[class*="scroll-handle"] {
+    background-color: var(--primary-color3) !important;
+}
+
+.swiper-scrollbar-drag:hover,
+.scroll-bar:hover,
+[class*="scroll-handle"]:hover {
+    background-color: var(--primary-color) !important;
+}
+
+/* Cambiar elementos de fondo amarillo/neón */
+.bg-primary, 
+.bg-accent,
+[class*="accent-bg"] {
+    background-color: var(--secondary-color) !important;
+}
+
+/* Ajustar sección de características */
+.feature-box {
+    background-color: var(--white-color);
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 4px 15px rgba(202, 47, 112, 0.1);
+}
+
+/* Ajustar colores de texto en secciones oscuras */
+[class*="dark-bg"] h1,
+[class*="dark-bg"] h2,
+[class*="dark-bg"] h3,
+[class*="dark-bg"] h4,
+[class*="dark-bg"] h5,
+[class*="dark-bg"] h6,
+[class*="dark-bg"] p {
+    color: var(--dark-color);
+}
+
+/* Menú y navegación actualizada */
+.current-menu-item,
+.menu-item.current {
+    background-color: var(--secondary-color2);
+}
+
+/* Botones especiales */
+.special-button {
+    background-color: var(--primary-color3) !important;
+    color: var(--white-color) !important;
+}
+
+/* Ajustar contraste de los botones */
+.tf-button.style-1 {
+    background-color: var(--primary-color) !important;
+    color: var(--white-color) !important;
+    font-weight: 500;
+    text-shadow: none;
+}
+
+/* Ajustar colores del menú y enlaces */
+.menu li a,
+.menu-item a {
+    color: var(--primary-color2) !important;
+    font-weight: 500;
+}
+
+.menu li a:hover,
+.menu-item a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Mejorar contraste en textos generales */
+body, p, .content {
+    color: var(--dark-color);
+}
+
+/* Ajustar fondo y contraste de las secciones */
+.tf-section {
+    background-color: var(--white-color);
+}
+
+.tf-section.bg-light {
+    background-color: var(--secondary-color2);
+}
+
+/* Mejorar contraste en el footer */
+.footer {
+    background-color: var(--secondary-color2);
+}
+
+.footer p,
+.footer a {
+    color: var(--primary-color2);
+}
+
+/* Ajustar contraste en elementos de navegación */
+.nav-tabs .nav-link {
+    color: var(--primary-color2);
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Mejorar contraste en el menú principal */
+.main-nav > ul > li > a {
+    color: var(--primary-color2) !important;
+    font-weight: 500;
+}
+
+/* Nuevo Preloader */
 .preload {
-    background-color: var(--secondary-lightest) !important;
+    background-color: var(--secondary-color2) !important;
 }
 
 .flower-loader {
-    position: relative;
     width: 100px;
     height: 100px;
-    margin: 0 auto 20px;
+    position: relative;
+    animation: rotate 2s infinite linear;
 }
 
 .petal {
     position: absolute;
-    width: 40px;
-    height: 40px;
-    background: var(--primary-light);
-    border-radius: 50% 0;
-    transform-origin: 0 100%;
-    animation: petalFade 2s infinite;
-    box-shadow: 0 0 10px rgba(161, 37, 89, 0.2);
+    width: 30px;
+    height: 30px;
+    background: var(--primary-color);
+    border-radius: 50% 50% 0 50%;
+    transform-origin: 100% 100%;
 }
 
-.petal1 { transform: rotate(0deg); animation-delay: 0s; }
-.petal2 { transform: rotate(72deg); animation-delay: 0.2s; }
-.petal3 { transform: rotate(144deg); animation-delay: 0.4s; }
-.petal4 { transform: rotate(216deg); animation-delay: 0.6s; }
-.petal5 { transform: rotate(288deg); animation-delay: 0.8s; }
+.petal1 { transform: rotate(0deg); }
+.petal2 { transform: rotate(72deg); }
+.petal3 { transform: rotate(144deg); }
+.petal4 { transform: rotate(216deg); }
+.petal5 { transform: rotate(288deg); }
 
-@keyframes petalFade {
-    0%, 100% { 
-        opacity: 1;
-        background: var(--primary-light);
-    }
-    50% { 
-        opacity: 0.7;
-        background: var(--secondary-intense);
-        transform: scale(1.1);
-    }
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .loading-text {
-    color: var(--primary-dark);
-    font-size: 1.2em;
-    text-align: center;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 2px var(--white),
-                 -1px -1px 2px var(--white),
-                 1px -1px 2px var(--white),
-                 -1px 1px 2px var(--white);
-    animation: textPulse 2s infinite;
+    margin-top: 20px;
+    color: var(--primary-color2);
+    font-size: 18px;
+    font-weight: 500;
 }
 
-@keyframes textPulse {
-    0%, 100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 0.9;
-        transform: scale(1.02);
-    }
+/* Eliminar fondos negros y ajustar colores */
+.bg-dark-section,
+[class*="dark-bg"],
+.dark-mode {
+    background-color: var(--secondary-color2) !important;
 }
 
-/* Títulos y texto */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-dark);
+/* Ajustar áreas de contenido con fondo negro */
+.tf-card-box,
+.card-media,
+.featured-countdown {
+    background-color: var(--white-color) !important;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 4px 15px rgba(202, 47, 112, 0.1);
 }
 
-.tf-title {
-    color: var(--primary-dark) !important;
+/* Ajustar colores de texto en áreas oscuras */
+.current-bid,
+.card-bottom,
+.meta-info {
+    background-color: var(--white-color) !important;
+    color: var(--dark-color) !important;
 }
 
-/* Tarjetas y contenedores */
-.box-item {
-    background: var(--white);
-    border: 1px solid var(--primary-light);
-    box-shadow: 0 4px 15px rgba(161, 37, 89, 0.1);
+.current-bid span,
+.card-bottom span,
+.meta-info span {
+    color: var(--primary-color2) !important;
 }
 
-/* Scrollbar personalizado */
-::-webkit-scrollbar {
-    width: 12px;
+/* Estilizar secciones de colecciones */
+.top-collections {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(202, 47, 112, 0.1);
 }
 
-::-webkit-scrollbar-track {
-    background: var(--secondary-lightest);
+.collection-item {
+    background-color: var(--secondary-color2);
+    border: 1px solid var(--secondary-color);
 }
 
-::-webkit-scrollbar-thumb {
-    background: var(--secondary-medium);
-    border-radius: 6px;
+/* Ajustar footer */
+footer,
+.footer-bottom {
+    background-color: var(--secondary-color2) !important;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-dark);
+footer a,
+.footer-bottom a,
+footer p,
+.footer-bottom p {
+    color: var(--primary-color2) !important;
 }
 
-/* Fondos oscuros a claros */
-[class*="black-bg"],
-.black-section {
-    background-color: var(--secondary-lightest) !important;
-    color: var(--primary-dark) !important;
+/* Ajustar áreas de texto */
+.text-dark {
+    color: var(--dark-color) !important;
 }
 
-/* Sobrescribir fondos oscuros */
+.bid-info,
+.price-info {
+    background-color: var(--white-color);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+}
+
+/* Eliminar cualquier fondo negro restante */
 [style*="background-color: #000"],
 [style*="background-color: black"],
 [style*="background-color: rgb(0, 0, 0)"] {
-    background-color: var(--secondary-lightest) !important;
-    color: var(--primary-dark) !important;
+    background-color: var(--white-color) !important;
 }
 
-/* Banner principal */
-.banner {
-    background-color: var(--secondary-lightest);
-    padding: 100px 0;
-    text-align: center;
-    position: relative;
+/* Ajustar elementos con fondo neón/amarillo */
+.accent-bg,
+.highlight-bg {
+    background-color: var(--secondary-color2) !important;
+}
+
+/* Estilizar secciones de destacados */
+.featured-item {
+    background: var(--white-color);
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 4px 15px rgba(202, 47, 112, 0.1);
+}
+
+/* Ajustar botones y badges */
+.badge, 
+.tag {
+    background-color: var(--primary-color3) !important;
+    color: var(--white-color) !important;
+}
+
+/* Suavizar sombras y bordes de las tarjetas */
+.tf-card-box {
+    background-color: var(--white-color) !important;
+    border: 1px solid var(--secondary-color) !important;
+    border-radius: 15px !important;
+    box-shadow: 0 5px 15px rgba(241, 187, 213, 0.2) !important;
+    transition: all 0.3s ease;
+}
+
+.tf-card-box:hover {
+    box-shadow: 0 8px 20px rgba(241, 187, 213, 0.3) !important;
+    transform: translateY(-3px);
+}
+
+.card-media {
+    border-radius: 12px !important;
     overflow: hidden;
+    border: none !important;
+    background: var(--white-color) !important;
 }
 
-.banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, rgba(241, 187, 213, 0.2) 0%, rgba(161, 37, 89, 0.1) 100%);
-    z-index: 1;
+/* Suavizar sombras en los sliders */
+.swiper-slide {
+    box-shadow: none !important;
 }
 
-.banner .content-text {
-    position: relative;
-    z-index: 2;
+.swiper-slide-active {
+    box-shadow: 0 5px 15px rgba(241, 187, 213, 0.2) !important;
 }
 
-.banner h1 {
-    color: var(--primary-dark);
-    font-size: 4em;
-    font-weight: 700;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(161, 37, 89, 0.1);
+/* Ajustar bordes y sombras de elementos destacados */
+.featured-item,
+.collection-item,
+.tf-box-icon {
+    background-color: var(--white-color) !important;
+    border: 1px solid var(--secondary-color) !important;
+    border-radius: 15px !important;
+    box-shadow: 0 5px 15px rgba(241, 187, 213, 0.15) !important;
 }
 
-.banner p {
-    color: var(--primary-dark);
-    font-size: 1.2em;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 40px;
+/* Suavizar countdown y elementos superpuestos */
+.featured-countdown {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border: 1px solid var(--secondary-color) !important;
+    box-shadow: 0 3px 10px rgba(241, 187, 213, 0.1) !important;
 }
 
-.button-slider {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+/* Ajustar botones y elementos interactivos */
+.button-place-bid {
+    background: none !important;
+    box-shadow: none !important;
 }
 
-.button-slider .tf-button {
-    padding: 15px 30px;
-    font-size: 1.1em;
-    border-radius: 30px;
-    text-transform: none;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
-    background: var(--primary-dark);
-    color: var(--white);
-    border: 2px solid var(--primary-dark);
+.tf-button {
+    border-radius: 25px !important;
+    box-shadow: 0 3px 10px rgba(202, 47, 112, 0.15) !important;
 }
 
-.button-slider .tf-button:hover {
-    background: var(--white);
-    color: var(--primary-dark);
+/* Eliminar sombras oscuras en los bordes */
+.tf-card-box::before,
+.tf-card-box::after,
+.featured-item::before,
+.featured-item::after {
+    display: none !important;
+}
+
+/* Suavizar bordes de las imágenes */
+.card-media img {
+    border-radius: 10px !important;
+}
+
+/* Ajustar elementos superpuestos */
+.meta-info {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--secondary-color) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 3px 10px rgba(241, 187, 213, 0.1) !important;
+}
+
+/* Suavizar efectos hover */
+.tf-card-box:hover,
+.featured-item:hover,
+.collection-item:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(161, 37, 89, 0.2);
+    box-shadow: 0 8px 20px rgba(241, 187, 213, 0.2) !important;
 }
 
-/* Estilos para la sección de título principal */
-.pages-title .content {
-    position: relative;
-    z-index: 2;
-    padding: 60px 0;
+/* Eliminar sombras laterales en contenedores principales */
+.themesflat-container,
+.tf-section,
+.flat-pages-title {
+    box-shadow: none !important;
 }
 
-.pages-title h1 {
-    color: var(--primary-dark);
-    font-size: 4.5em;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(161, 37, 89, 0.1);
+/* Añadir gradiente suave al fondo si es necesario */
+.flat-pages-title {
+    background: linear-gradient(to bottom, var(--secondary-color2), var(--white-color)) !important;
 }
 
-.pages-title p {
-    color: var(--primary-dark);
-    font-size: 1.3em;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 30px;
-    background-color: rgba(255, 255, 255, 0.95);
+/* Mejorar sección de colecciones */
+.collections-wrapper {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(241, 187, 213, 0.15);
+}
+
+/* Estilizar tarjetas de colección */
+.collection-card {
+    background-color: var(--white-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.collection-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(241, 187, 213, 0.2);
+}
+
+/* Eliminar fondos negros en iconos y contenedores */
+.tf-box-icon {
+    background-color: var(--white-color) !important;
+}
+
+.tf-box-icon .image {
+    background-color: var(--secondary-color2) !important;
+    border-radius: 15px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(161, 37, 89, 0.1);
-    font-weight: 500;
-    border: 1px solid var(--primary-light);
 }
 
-.pages-title .tf-button {
-    background-color: var(--primary-dark);
-    color: var(--white);
-    border: 2px solid var(--primary-dark);
+.tf-box-icon img {
+    filter: none !important;
+}
+
+/* Mejorar apariencia de los pasos */
+.step {
+    background-color: var(--white-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(241, 187, 213, 0.15);
+}
+
+.step-icon {
+    background-color: var(--secondary-color2);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+/* Estilizar títulos y textos */
+.collection-title {
+    color: var(--primary-color2);
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.collection-description {
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+/* Mejorar botones y enlaces */
+.discover-more {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
     transition: all 0.3s ease;
 }
 
-.pages-title .tf-button:hover {
-    background-color: var(--white);
-    color: var(--primary-dark);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(161, 37, 89, 0.2);
+.discover-more:hover {
+    background-color: var(--primary-color2);
 }
 
-.pages-title .tf-button.active {
-    background-color: var(--secondary-intense);
-    border-color: var(--secondary-intense);
+/* Elementos con fondo negro */
+[class*="black-bg"],
+.dark-element,
+.black-section {
+    background-color: var(--white-color) !important;
+    color: var(--dark-color) !important;
 }
 
-.pages-title .tf-button.active:hover {
-    background-color: var(--white);
-    color: var(--secondary-intense);
+/* Ajustar los íconos en los pasos */
+.step img,
+.icon-box img {
+    background-color: var(--secondary-color2);
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 15px;
 }
 
-/* Animaciones para el banner */
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Eliminar sombras oscuras y bordes negros */
+.collection-item,
+.featured-box,
+.icon-container {
+    border: 1px solid var(--secondary-color) !important;
+    box-shadow: 0 5px 15px rgba(241, 187, 213, 0.15) !important;
+    background-color: var(--white-color) !important;
 }
 
-.wow.fadeInUp {
-    animation: fadeUp 1s ease forwards;
+/* Mejorar apariencia del contador y elementos superpuestos */
+.countdown,
+.overlay-content {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border: 1px solid var(--secondary-color);
+    backdrop-filter: blur(5px);
+}
+
+/* Ajustar elementos de navegación */
+.arrow-nav,
+.slider-navigation {
+    background-color: var(--secondary-color2) !important;
+    border: 1px solid var(--secondary-color);
+    color: var(--primary-color2) !important;
+}
+
+/* Eliminar cualquier sombra negra residual */
+* {
+    text-shadow: none !important;
+}
+
+/* Swiper overrides */
+.swiper-button-next.swiper-button-black,
+.swiper-button-prev.swiper-button-black {
+    --swiper-navigation-color: #a12559;
+}
+
+.swiper-pagination-black {
+    --swiper-pagination-color: #a12559;
+}
+
+.swiper-lazy-preloader-black {
+    --swiper-preloader-color: #a12559;
+}
+
+.swiper-scrollbar {
+    background: #fae5ef;
+}
+
+.swiper-scrollbar-drag {
+    background: #e891bb;
+}
+
+/* Update any remaining dark backgrounds */
+.bg-dark, 
+[style*="background-color: #111"],
+[style*="background: #111"] {
+    background-color: #fae5ef !important;
+}
+
+/* Update any remaining text colors */
+.text-dark {
+    color: #a12559 !important;
 }
 
 /* Hero Section */
-.banner-top .wow.fadeInUp p {
-    color: var(--primary-dark);
+.pages-title .content p.wow.fadeInUp {
+    color: var(--primary-color2);
     font-size: 1.2em;
-    font-weight: 500;
+    margin: 1.5em auto;
+    max-width: 800px;
     line-height: 1.6;
-    border: none !important;
-    background: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-    margin: 1em 0;
+    font-weight: 500;
 }
