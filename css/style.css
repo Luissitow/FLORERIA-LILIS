@@ -132,8 +132,7 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
-menu,
+main,
 nav,
 section {
     display: block
@@ -1371,19 +1370,19 @@ a:focus {
 
 /* style-white */
 .header_1.style-white {
-    background: #fff;
+    background: #1E1E2F; /* Fondo azul oscuro */
 }
 
 .header_1.style-white .tf-button {
-    background-color: #f55195;
+    background-color: #FF6F61; /* Botón coral */
 }
 
 .header_1.style-white .tf-button:hover {
-    background-color: #DDF247;
+    background-color: #FF9E80; /* Hover coral claro */
 }
 
 .header_1.style-white #main-nav>ul>li>a {
-    color: #e891bb;
+    color: #F5F5F5; /* Texto blanco humo */
 }
 
 .header_1.style-white #main-nav>.menu>li.current-menu-item>a::after,
@@ -2750,7 +2749,7 @@ a.item-menu-mobile::after {
 }
 
 /* RESPONSIVE: apila elementos en móvil */
-@media (max-width: 768px) {
+@media (max-width:  768px) {
   .modal-body {
     flex-direction: column;
     gap: 1.2rem;
