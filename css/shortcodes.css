@@ -130,7 +130,7 @@
 .tf-button:hover,
 .tf-button.active {
     color: #e891bb;
-    background-color: #DDF247;
+    background-color: #ffffff;  /* Cambia el color de fondo al pasar el mouse o al hacer clic en el botón de cotiza en el contenedor del carruseñ */
 }
 
 .tf-button:focus {
@@ -142,7 +142,7 @@
     height: 44px;
     gap: 10px;
     flex-shrink: 0;
-    background-color: #DDF247;
+    background-color: #ba4a8e;  /* Cambia el color del botón de ver catálogo y contacto  del menu */
 }
 
 .tf-button.style-1:hover,
@@ -152,7 +152,7 @@
 }
 
 .tf-button.style-1.active:hover {
-    background-color: #DDF247;
+    background-color: #ba4a8e; /* Cambia el color de hacer pedido en el menu de wow fade IN UP */
 }
 
 /* tf-button loadmore */
