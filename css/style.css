@@ -160,7 +160,7 @@ body {
 }
 
 body.background-white {
-    background-color: #fff;
+    background-color: #e891bb;
 }
 
 article,
@@ -228,7 +228,7 @@ input,
 select,
 textarea {
     font-family            : 'Manrope', sans-serif;
-    color                  : #fff;
+    color                  : #e891bb;
     -webkit-font-smoothing : antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering         : optimizeLegibility;
@@ -247,7 +247,7 @@ p {
     font-weight: 400;
     font-size  : 18px;
     line-height: 28px;
-    color      : #7A798A;
+    color      : #e891bb;
 }
 
 strong,
@@ -266,7 +266,7 @@ blockquote {
 
 abbr,
 acronym {
-    border-bottom: 1px dotted #e0e0e0;
+    border-bottom: 1px dotted #e891bb;
     cursor       : help;
 }
 
@@ -307,8 +307,8 @@ samp,
 pre {
     margin         : 20px 0;
     padding        : 4px 12px;
-    background     : #f5f5f5;
-    border         : 1px solid #e0e0e0;
+    background     : #e891bb;
+    border         : 1px solid #e891bb;
     overflow-x     : auto;
     -webkit-hyphens: none;
     -moz-hyphens   : none;
@@ -345,7 +345,7 @@ html {
 
 hr {
     margin-bottom: 20px;
-    border       : dashed 1px #ccc;
+    border       : dashed 1px #e891bb;
 }
 
 
@@ -400,7 +400,7 @@ del,
 table,
 th,
 td {
-    border: 1px solid #343444;
+    border: 1px solid #e891bb;
 }
 
 table {
@@ -496,6 +496,7 @@ input[type="submit"] {
     line-height       : 1;
     cursor            : pointer;
     -webkit-appearance: button;
+    appearance: button;
     border            : 0;
 }
 
@@ -512,12 +513,14 @@ input[type="radio"] {
 
 input[type="search"] {
     -webkit-appearance: textfield;
+    appearance: textfield;
     /* Addresses appearance set to searchfield in S5, Chrome */
 }
 
 input[type="search"]::-webkit-search-decoration {
     /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
     -webkit-appearance: none;
+    appearance: none;
 }
 
 button::-moz-focus-inner,
@@ -549,7 +552,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 textarea.style-1,
 input.style-1 {
-    background-color: #232323 !important;
+    background-color: #e891bb !important;
 }
 
 .search.search-submit {
@@ -600,7 +603,7 @@ select{
     font-size: 14px;
     right: 10px;
     font-weight: 600;
-    color: #1F1F2C;
+    color: #e891bb;
     display: block;
     position: absolute;
     background: 0 0;
@@ -628,7 +631,7 @@ select {
     padding: 15px 26px;
     width: 100%;
     background: #e891bb;
-    color: #fff;
+    color: #e891bb;
 }
 
 select option{
@@ -666,7 +669,7 @@ input[type="color"] {
     padding: 15px 26px;
     width: 100%;
     background: #e891bb;
-    color: #8A8AA0;
+    color: #e891bb;
 }
 
 /* Input focus */
@@ -1265,12 +1268,12 @@ a:focus {
 #main-nav>ul>li:hover>a,
 #main-nav>.menu>li:hover>a::after,
 #main-nav>.menu>li.current-menu-item>a::after {
-    color: #E2FE26;
+    color: #e891bb;
     opacity: 1;
 }
 
 #main-nav>ul>li.current-menu-item>a {
-    color: #E2FE26;
+    color: #e891bb;
     font-weight: 800;
 }
 
@@ -2153,7 +2156,7 @@ a:focus {
     -moz-transition   : all 0.5s ease;
     -ms-transition    : all 0.5s ease;
     -o-transition     : all 0.5s ease;
-    transition        : all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .canvas-nav-wrap .inner-canvas-nav::-webkit-scrollbar {
@@ -2194,7 +2197,7 @@ a:focus {
     -moz-transition   : all 0.3s ease;
     -ms-transition    : all 0.3s ease;
     -o-transition     : all 0.3s ease;
-    transition        : all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .mobile-nav-wrap.active .overlay-mobile-nav {
@@ -2222,7 +2225,7 @@ a:focus {
     -moz-transition   : all 0.5s ease;
     -ms-transition    : all 0.5s ease;
     -o-transition     : all 0.5s ease;
-    transition        : all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .mobile-nav-wrap .inner-mobile-nav::-webkit-scrollbar {
