@@ -2136,14 +2136,14 @@
 
 /* collector */
 /* ------------------------------ */
-.top-collector-wrapper {
+.top-collector-wrapper {       /* top */
     position: relative;
     padding: 90px 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-color: rgba(22, 22, 22, 1);
+    background-color: #f9c3df;
     background-blend-mode: luminosity;
     background-image: 
     url(../images/backgroup-section/bg-4.jpg);
