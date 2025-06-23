@@ -1,36 +1,46 @@
-const screenWidth = window.innerWidth;
-
-let particlesCount = 60;
-let particleSize = 3;
-
-if (screenWidth < 768) {
-  particlesCount = 30;
-  particleSize = 2;
-} else if (screenWidth < 480) {
-  particlesCount = 20;
-  particleSize = 1.5;
-}
-
 particlesJS("particles-js", {
   particles: {
-    number: { value: particlesCount },
-    color: { value: "#fefefe" },
-    shape: { type: "circle" },
-    opacity: { value: 0.2 },
-    size: { value: particleSize },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: "#fefefe",
-      opacity: 0.2,
-      width: 1,
+    number: {
+      value: 12,
+      density: { enable: true, value_area: 800 }
     },
-    move: { enable: true, speed: 1 }
+    shape: {
+      type: "image",
+      image: {
+        src: "/img/iconos/floricon.png",
+        width: 32,
+        height: 32
+      }
+    },
+    size: {
+      value: 12,
+      random: true
+    },
+    opacity: {
+      value: 0.6,
+      random: true
+    },
+    move: {
+      enable: true,
+      speed: 1.2,
+      direction: "none",
+      random: true,
+      straight: false,
+      out_mode: "out",
+      bounce: false
+    },
+    line_linked: {
+      enable: false
+    }
   },
   interactivity: {
     events: {
       onhover: { enable: true, mode: "repulse" },
+      onclick: { enable: false },
       resize: true
+    },
+    modes: {
+      repulse: { distance: 80 }
     }
   },
   retina_detect: true
