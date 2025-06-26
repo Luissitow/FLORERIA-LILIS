@@ -47,3 +47,218 @@
     font-weight: 500;
     font-style: normal;
 }
+
+/* ======================================
+   MEJORAS DE DISEÑO RESPONSIVE PARA EL MENÚ
+   ====================================== */
+
+/* Centrado mejorado del menú principal */
+.header_1 #main-nav {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 10 !important;
+    width: auto !important;
+}
+
+#main-nav>ul {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+#main-nav>ul>li {
+    float: none !important;
+    display: inline-block !important;
+    padding: 16px 16px 18px 15px !important;
+}
+
+/* Mejora de la tipografía del menú */
+#main-nav>ul>li>a.tipografiah2 {
+    font-family: "Lora", serif !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Estados hover mejorados */
+#main-nav>ul>li:hover>a.tipografiah2,
+#main-nav>ul>li.current-menu-item>a.tipografiah2 {
+    color: #e891bb !important;
+    font-weight: 600 !important;
+}
+
+/* ======================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ====================================== */
+
+/* Pantallas muy grandes */
+@media (min-width: 1400px) {
+    #main-nav>ul>li {
+        padding: 18px 22px 20px 20px !important;
+    }
+    
+    #main-nav>ul>li>a.tipografiah2 {
+        font-size: 17px !important;
+        line-height: 24px !important;
+    }
+}
+
+/* Pantallas grandes */
+@media (max-width: 1200px) and (min-width: 992px) {
+    #main-nav>ul>li {
+        padding: 16px 14px 18px 12px !important;
+    }
+    
+    #main-nav>ul>li>a.tipografiah2 {
+        font-size: 15px !important;
+        line-height: 21px !important;
+    }
+}
+
+/* Tabletas */
+@media (max-width: 991px) and (min-width: 769px) {
+    #main-nav>ul>li {
+        padding: 14px 10px 16px 8px !important;
+    }
+    
+    #main-nav>ul>li>a.tipografiah2 {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+}
+
+/* Móviles - ocultar menú de escritorio */
+@media (max-width: 768px) {
+    .header_1 #main-nav {
+        display: none !important;
+    }
+}
+
+/* Ajustes para pantallas muy anchas */
+@media (min-width: 1600px) {
+    #main-nav>ul>li {
+        padding: 20px 25px 22px 23px !important;
+    }
+    
+    #main-nav>ul>li>a.tipografiah2 {
+        font-size: 18px !important;
+        line-height: 25px !important;
+    }
+}
+
+/* ======================================
+   MEJORAS PARA EL MENÚ MÓVIL
+   ====================================== */
+
+/* Mejoras tipográficas para el menú móvil */
+.mobile-menu .tipografiah2 {
+    font-family: "Lora", serif !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    color: #333 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.mobile-menu .tipografiah2:hover {
+    color: #e891bb !important;
+    font-weight: 600 !important;
+}
+
+/* Mejoras para el botón del menú hamburguesa */
+.mobile-toggle {
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    padding: 10px !important;
+}
+
+.mobile-toggle:focus {
+    outline: none !important;
+}
+
+/* Espaciado del menú móvil */
+@media (max-width: 768px) {
+    .mobile-menu li {
+        padding: 12px 20px !important;
+        border-bottom: 1px solid #f0f0f0 !important;
+    }
+    
+    .mobile-menu li:last-child {
+        border-bottom: none !important;
+    }
+}
+
+/* ======================================
+   AJUSTES ADICIONALES DE COMPATIBILIDAD
+   ====================================== */
+
+/* Asegurar que el menú mantenga su posición correcta */
+.header_1 {
+    position: relative !important;
+}
+
+/* Mejoras para la transición suave */
+#main-nav>ul>li>a {
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* Mejorar la visualización de submenús si existen */
+#main-nav .sub-menu {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+    padding: 10px 0 !important;
+    margin-top: 10px !important;
+}
+
+#main-nav .sub-menu li a {
+    font-family: "Lora", serif !important;
+    font-weight: 400 !important;
+    color: #333 !important;
+    padding: 8px 20px !important;
+    font-size: 14px !important;
+    transition: all 0.3s ease !important;
+}
+
+#main-nav .sub-menu li a:hover {
+    color: #e891bb !important;
+    background: rgba(232, 145, 187, 0.1) !important;
+}
+
+/* Ajustes para resoluciones específicas */
+@media (max-width: 1366px) and (min-width: 1200px) {
+    #main-nav>ul>li {
+        padding: 16px 12px 18px 10px !important;
+    }
+    
+    #main-nav>ul>li>a.tipografiah2 {
+        font-size: 15px !important;
+        line-height: 21px !important;
+    }
+}
+
+/* Ajuste para laptops pequeños */
+@media (max-width: 1024px) and (min-width: 992px) {
+    #main-nav>ul>li {
+        padding: 14px 8px 16px 6px !important;
+    }
+    
+    #main-nav>ul>li>a.tipografiah2 {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+}
