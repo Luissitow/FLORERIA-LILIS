@@ -1,14 +1,15 @@
 window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
+  const logo = preloader.querySelector('img');
 
-  // Espera 2000ms antes de empezar a desvanecer
+  // Espera 1700ms antes de iniciar el desvanecido
   setTimeout(() => {
     preloader.style.opacity = '0';
-    preloader.style.transition = 'opacity 0.5s ease';
+    logo.style.opacity = '0';
 
-    // Espera otros 600ms después de desvanecerse antes de ocultarlo
+    // Espera 600ms antes de ocultar el preloader completamente
     setTimeout(() => {
       preloader.style.display = 'none';
     }, 600);
-  }, 1700); // <- tiempo que se muestra completo el preloader
+  }, 1700);
 });
