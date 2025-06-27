@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #e891bb;
+  background: #ea6ea2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,7 +109,7 @@
 /* Estados hover mejorados */
 #main-nav>ul>li:hover>a.tipografiah2,
 #main-nav>ul>li.current-menu-item>a.tipografiah2 {
-    color: #e891bb !important;
+    color: #ea6ea2 !important;
     font-weight: 600 !important;
 }
 
@@ -189,7 +189,7 @@
 }
 
 .mobile-menu .tipografiah2:hover {
-    color: #e891bb !important;
+    color: #ea6ea2 !important;
     font-weight: 600 !important;
 }
 
@@ -251,7 +251,7 @@
 }
 
 #main-nav .sub-menu li a:hover {
-    color: #e891bb !important;
+    color: #ea6ea2 !important;
     background: rgba(232, 145, 187, 0.1) !important;
 }
 

@@ -154,13 +154,13 @@ html {
 }
 
 body {
-    background : #e891bb;    /* Color de fondo de la web e891bb ----- */
+    background : #e891bb;    /* Color de fondo de la web ea6ea2 ----- */
     line-height: 1;
     padding: 0 !important;
 }
 
 body.background-white {
-    background-color: #e891bb;
+    background-color: #ea6ea2;
 }
 
 article,
@@ -228,7 +228,7 @@ input,
 select,
 textarea {
     font-family            : 'Manrope', sans-serif;
-    color                  : #e891bb;
+    color                  : #ea6ea2;
     -webkit-font-smoothing : antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering         : optimizeLegibility;
@@ -247,7 +247,7 @@ p {
     font-weight: 400;
     font-size  : 18px;
     line-height: 28px;
-    color      : #e891bb;
+    color      : #ea6ea2;
 }
 
 strong,
@@ -266,7 +266,7 @@ blockquote {
 
 abbr,
 acronym {
-    border-bottom: 1px dotted #e891bb;
+    border-bottom: 1px dotted #ea6ea2;
     cursor       : help;
 }
 
@@ -307,8 +307,8 @@ samp,
 pre {
     margin         : 20px 0;
     padding        : 4px 12px;
-    background     : #e891bb;
-    border         : 1px solid #e891bb;
+    background     : #ea6ea2;
+    border         : 1px solid #ea6ea2;
     overflow-x     : auto;
     -webkit-hyphens: none;
     -moz-hyphens   : none;
@@ -345,7 +345,7 @@ html {
 
 hr {
     margin-bottom: 20px;
-    border       : dashed 1px #e891bb;
+    border       : dashed 1px #ea6ea2;
 }
 
 
@@ -400,7 +400,7 @@ del,
 table,
 th,
 td {
-    border: 1px solid #e891bb;
+    border: 1px solid #ea6ea2;
 }
 
 table {
@@ -552,7 +552,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 textarea.style-1,
 input.style-1 {
-    background-color: #e891bb !important;
+    background-color: #ea6ea2 !important;
 }
 
 .search.search-submit {
@@ -603,7 +603,7 @@ select{
     font-size: 14px;
     right: 10px;
     font-weight: 600;
-    color: #e891bb;
+    color: #ea6ea2;
     display: block;
     position: absolute;
     background: 0 0;
@@ -630,8 +630,8 @@ select {
     border-radius: 12px;
     padding: 15px 26px;
     width: 100%;
-    background: #e891bb;
-    color: #e891bb;
+    background: #ea6ea2;
+    color: #ea6ea2;
 }
 
 select option{
@@ -668,8 +668,8 @@ input[type="color"] {
     border-radius: 12px;
     padding: 15px 26px;
     width: 100%;
-    background: #e891bb;
-    color: #e891bb;
+    background: #ea6ea2;
+    color: #ea6ea2;
 }
 
 /* Input focus */
@@ -1038,7 +1038,7 @@ label.error {
     margin-bottom: 30px;
 }
 .tf-color {
-    color: #DDF247 !important;
+    color: #ea6ea2 !important;
 }
 .divider {
     width: 100%;
@@ -1268,12 +1268,12 @@ a:focus {
 #main-nav>ul>li:hover>a,
 #main-nav>.menu>li:hover>a::after,
 #main-nav>.menu>li.current-menu-item>a::after {
-    color: #e891bb;
+    color: #ea6ea2;
     opacity: 1;
 }
 
 #main-nav>ul>li.current-menu-item>a {
-    color: #e891bb;
+    color: #ea6ea2;
     font-weight: 800;
 }
 
@@ -1323,7 +1323,7 @@ a:focus {
 
 #main-nav .sub-menu li.current-item > a,
 #main-nav .sub-menu li a:hover {
-    color: #DDF247;
+    color: #ea6ea2;
 }
 
 #main-nav>ul>li .sub-menu li {
@@ -1347,7 +1347,7 @@ a:focus {
     z-index: 20;
     transition: ease-out 0.3s;
     min-width: 240px;
-    border: 1px solid #e891bb;
+    border: 1px solid #ea6ea2;
     border-radius: 8px;
     text-align: start;
     padding: 15px 0;
@@ -1391,7 +1391,7 @@ a:focus {
 .header_1.style-white #main-nav>.menu>li.current-menu-item>a::after,
 .header_1.style-white #main-nav>.menu>li:hover>a::after, 
 .header_1.style-white #main-nav>ul>li:hover>a {
-    color: #e891bb;
+    color: #ea6ea2;
 }
 
 .header_1.style-white.is-fixed {
@@ -1442,7 +1442,7 @@ a:focus {
 }
 
 .header_1.header-full #wallet-header a:hover {
-    background: #DDF247;
+    background: #ea6ea2;
 }
 
 /* Mobile Menu Button */
@@ -1478,7 +1478,7 @@ a:focus {
 .header_1.style-white .mobile-button::before,
 .header_1.style-white .mobile-button::after,
 .header_1.style-white .mobile-button span {
-    background-color: #e891bb;
+    background-color: #ea6ea2;
 }
 
 .mobile-button:before,
@@ -1550,7 +1550,7 @@ a:focus {
 }
 
 .widget-menu ul li a:hover {
-    color: #DDF247;
+    color: #ea6ea2;
 }
 
 .background-white .widget-menu ul li a:after {
@@ -1562,7 +1562,7 @@ a:focus {
     width             : 0;
     height            : 1px;
     position          : absolute;
-    background        : #DDF247;
+    background        : #ea6ea2;
     left              : 50%;
     bottom            : 0;
     transform         : translateX(-50%);
@@ -1668,7 +1668,7 @@ a:focus {
 }
 
 .footer-bottom ul li a:hover {
-    color: #DDF247;
+    color: #ea6ea2;
 }
 
 /* style-1 */
@@ -1715,7 +1715,7 @@ a:focus {
 
 #footer.bg-white .footer-bottom ul li a,
 #footer.bg-white .footer-bottom p {
-    color: #e891bb;
+    color: #ea6ea2;
     font-size: 12px;
     line-height: 19px;
 }
@@ -1789,7 +1789,7 @@ a:focus {
 
 .background-white .heading-section a,
 .background-white .heading-section .tf-title {
-    color: #e891bb;
+    color: #ea6ea2;
 }
 
 .background-white .heading-section a::after {
@@ -1840,8 +1840,8 @@ a:focus {
 }
 
 .tf-button.style-1.type-1:hover {
-    background-color: #DDF247;
-    color: #e891bb;
+    background-color: #ea6ea2;
+    color: #ea6ea2;
 }
 
 .section-menu-left .list-menu > ul > li {
@@ -1896,8 +1896,8 @@ a:focus {
 .section-menu-left .list-menu li.active > a,
 .section-menu-left .list-menu > ul > li > a:hover {
     box-shadow: 0px 4px 20px 0px rgba(221, 242, 71, 0.30);
-    color: #e891bb;
-    background: #DDF247;
+    color: #ea6ea2;
+    background: #ea6ea2;
 }
 
 .section-menu-left .list-menu > ul > li.has-item > a::before {
@@ -1929,7 +1929,7 @@ a:focus {
     padding: 3px;
     border-radius: 50%;
     border: 1px solid #D0D0D1;
-    background-color: #e891bb;
+    background-color: #ea6ea2;
 }
 
 .section-menu-left .list-menu ul.sub-item {
@@ -1972,15 +1972,15 @@ a:focus {
 }
 
 .section-menu-left .list-menu ul.sub-item li:hover::before {
-    background-color: #DDF247;
+    background-color: #ea6ea2;
 }
 .section-menu-left .list-menu ul.sub-item li:hover a {
-    color: #DDF247;
+    color: #ea6ea2;
 }
 
 .section-menu-left .language ul.sub-item {
     position: absolute;
-    background-color: #e891bb;
+    background-color: #ea6ea2;
     width: 100%;
     z-index: 1;
     margin: 0;
@@ -2029,13 +2029,13 @@ a:focus {
 .section-menu-left .create a.tf-button {
     width: 100%;
     background-color: #ca2f70;
-    color: #e891bb;
+    color: #ea6ea2;
     cursor: pointer;
 }
 
 .section-menu-left .create a.tf-button.active {
-    color: #e891bb;
-    background-color: #DDF247;
+    color: #ea6ea2;
+    background-color: #ea6ea2;
 }
 
 .section-menu-left .content h6 {
@@ -2076,7 +2076,7 @@ a:focus {
     content: "";
     top: 50%;
     left: 0;
-    background-color: #DDF247;
+    background-color: #ea6ea2;
     border-radius: 999px;
     transform: translate(-50%, -50%);
     -webkit-transition: all 0.3s ease;
@@ -2094,7 +2094,7 @@ a:focus {
 
 .section-menu-left ul.menu-tab li.active,
 .section-menu-left ul.menu-tab li:hover {
-    color: #DDF247;
+    color: #ea6ea2;
 }
 
 .section-menu-left ul.menu-tab li svg {
@@ -2157,7 +2157,7 @@ a:focus {
     top: 0;
     right: -340px;
     position: fixed;
-    background-color: #e891bb;
+    background-color: #ea6ea2;
     z-index: 999999;
     overflow-y: auto;
     -webkit-transition: all 0.5s ease;
@@ -2226,7 +2226,7 @@ a:focus {
     top: 0;
     left: -340px;
     position: fixed;
-    background-color: #e891bb;
+    background-color: #ea6ea2;
     z-index: 999999;
     overflow-y: auto;
     -webkit-transition: all 0.5s ease;
@@ -2351,7 +2351,7 @@ a:focus {
     width: 100%;
     box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.05);
     z-index: 9999;
-    background: #e891bb;
+    background: #ea6ea2;
     border: none;
     opacity: 1;
     -webkit-transition: all 0.5s ease;
@@ -2378,7 +2378,7 @@ a:focus {
     z-index: 999999999999999;
     height: 100%;
     width: 100%;
-    background-color: #e891bb;
+    background-color: #ea6ea2;
 }
 
 .preload-container .middle {
@@ -2616,7 +2616,7 @@ body.background-white .tf-mouse-outer {
   z-index: 9999;
   width: 100%;
   height: 100%;
-  background-color: #e891bb; /* Color de fondo del preloader */
+  background-color: #ea6ea2; /* Color de fondo del preloader */
   display: flex;
   align-items: center;
   justify-content: center;
