@@ -663,3 +663,11 @@ window.addEventListener("load", function () {
   document.querySelector('.close-btn').addEventListener('click', () => {
     document.getElementById('modal-proyecto').style.display = 'none';
   });
+
+
+  
+
+
+
+
+  
