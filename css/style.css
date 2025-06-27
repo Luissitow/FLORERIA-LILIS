@@ -2809,3 +2809,8 @@ a.item-menu-mobile::after {
     max-height: none;
   }
 }
+/* Solo para los elementos de filtros - más sutil */
+.dropdown-item span {
+font-family: 'Playfair Display SC', serif;
+    font-size: 14px;
+}
