@@ -1,0 +1,68 @@
+/* Estilos personalizados para Florería Lili's */
+/* Sobrescribe colores del sistema de filtros */
+
+/* ====== FILTROS DE PRODUCTOS ====== */
+
+/* Botones dropdown cuando están activos */
+.tf-soft .btn-secondary:active, 
+.tf-soft .btn-secondary.active,
+.tf-soft .show > .btn-secondary.dropdown-toggle {
+    background-color: #E91E63 !important;
+    border-color: #E91E63 !important;
+    color: white !important;
+}
+
+/* Items del dropdown al hacer hover */
+.tf-soft .dropdown-item:hover {
+    background-color: #E91E63 !important;
+    color: white !important;
+}
+
+/* Iconos de selección (checkmarks) */
+.tf-soft .sort-filter .icon-tick {
+    color: #E91E63 !important;
+}
+
+/* Estado activo de los filtros */
+.tf-soft .sort-filter.active {
+    background-color: rgba(233, 30, 99, 0.1) !important;
+    border-radius: 8px !important;
+    color: #E91E63 !important;
+}
+
+/* Texto del filtro activo */
+.tf-soft .sort-filter.active span {
+    color: #E91E63 !important;
+    font-weight: 600 !important;
+}
+
+/* ====== TEMA ROSA FLORERÍA ====== */
+
+/* Color principal de la marca */
+:root {
+    --floreria-pink: #E91E63;
+    --floreria-pink-light: #F8BBD9;
+    --floreria-pink-dark: #C2185B;
+}
+
+/* Botones principales con tema rosa */
+.tf-button.style-1:hover {
+    background-color: var(--floreria-pink) !important;
+    border-color: var(--floreria-pink) !important;
+}
+
+/* Enlaces y elementos interactivos */
+a:hover {
+    color: var(--floreria-pink) !important;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    .tf-soft .dropdown-item:hover {
+        background-color: #E91E63 !important;
+    }
+    
+    .tf-soft .sort-filter.active {
+        background-color: rgba(233, 30, 99, 0.15) !important;
+    }
+}

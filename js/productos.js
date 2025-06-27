@@ -2,25 +2,36 @@
 // Estructura de datos para el sistema de recomendaciones dinámico
 
 const productosFloristeria = [
-    // Ramos Buchón
+        // Ramos Buchón
     {
-        id: 1,
-        nombre: "Ramo Buchón de 6 Rosas",
-        precio: 250,
-        imagen: "/img/arreglos/ramobuchon.jpg",
-        categoria: "ramo",
-        ocasiones: ["cumpleaños", "aniversario", "san-valentin"],
-        estilo: "ramo-buchon",
-        empaque: "papel-coreano",
-        tamaño: "mini",
-        cantidadFlores: 6,
-        colores: ["rojo", "rosa"],
-        disponible: true,
-        masVendido: true,
-        nuevo: false,
-        oferta: false,
+        // ========== IDENTIFICACIÓN ==========
+        id: 1,                                    // ← Único e incremental (1, 2, 3...)
+        nombre: "Ramo Buchón de 6 Rosas",        // ← Nombre descriptivo y atractivo
+        
+        // ========== INFORMACIÓN COMERCIAL ==========
+        precio: 250,                              // ← Precio en pesos mexicanos (sin símbolos)
+        imagen: "/img/arreglos/ramobuchon.jpg",   // ← Ruta de la imagen (debe existir en tu carpeta)
+        categoria: "ramo",                        // ← Tipo general del producto
+        
+        // ========== FILTROS PRINCIPALES (Arrays para flexibilidad) ==========
+        ocasiones: ["cumpleaños", "aniversario", "san-valentin"], // ← CLAVE: Un producto puede ser para múltiples ocasiones
+        estilo: "ramo-buchon",                    // ← Estilo específico (solo uno)
+        empaque: "papel-coreano",                 // ← Tipo de empaque (solo uno)
+        tamaño: "mini",                           // ← Tamaño del arreglo (solo uno)
+        
+        // ========== CARACTERÍSTICAS FÍSICAS ==========
+        cantidadFlores: 6,                        // ← Número exacto de flores
+        colores: ["rojo", "rosa"],                // ← Array de colores disponibles
+        
+        // ========== ESTADOS BOOLEANOS (true/false) ==========
+        disponible: true,                         // ← Si está disponible para venta
+        masVendido: true,                         // ← Si es popular (aparecerá etiqueta "Más vendido")
+        nuevo: false,                             // ← Si es nuevo (aparecerá etiqueta "Nuevo")
+        oferta: false,                            // ← Si está en oferta (aparecerá etiqueta "Oferta")
+        
+        // ========== INFORMACIÓN ADICIONAL ==========
         descripcion: "Hermoso ramo buchón de 6 rosas frescas, perfecto para ocasiones especiales.",
-        tiempoElaboracion: "2-3 horas"
+        tiempoElaboracion: "2-3 horas"           // ← Tiempo estimado de preparación
     },
     {
         id: 2,
