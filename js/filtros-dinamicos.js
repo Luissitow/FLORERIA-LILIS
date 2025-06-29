@@ -176,9 +176,9 @@ class SistemaFiltros {
     }
 
     mostrarProductosIniciales() {
-        // Mostrar productos recomendados al cargar la página
-        const productosRecomendados = window.FloreriaData.obtenerProductosRecomendados(8);
-        this.mostrarProductos(productosRecomendados);
+        // Mostrar todos los productos disponibles al cargar la página
+        const todosLosProductos = window.FloreriaData.obtenerTodosLosProductos();
+        this.mostrarProductos(todosLosProductos);
     }
 
     mostrarProductos(productos) {

@@ -650,7 +650,7 @@ const productosFloristeria = [
         disponible: true,
         masVendido: false,
         nuevo: true,
-        oferta: false,
+        oferta: false,  
         descripcion: "Colorido arreglo primaveral para celebrar la Pascua.",
         tiempoElaboracion: "3-4 horas"
     }
