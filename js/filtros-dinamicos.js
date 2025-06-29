@@ -204,50 +204,51 @@ class SistemaFiltros {
         }
     }
 
-    crearTarjetaProducto(producto, index) {
-        const etiqueta = this.obtenerEtiqueta(producto);
-        const retraso = (index * 0.1).toFixed(1);
-        
-        return `
-            <div data-wow-delay="${retraso}s" class="wow fadeInUp col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                <div class="tf-card-box style-1">
-                    <div class="card-media">
-                        <a href="#">
-                            <img src="${producto.imagen}" alt="${producto.nombre}">
+crearTarjetaProducto(producto, index) {
+    const etiqueta = this.obtenerEtiqueta(producto);
+    const retraso = (index * 0.1).toFixed(1);
+
+    return `
+        <div data-wow-delay="${retraso}s" class="wow fadeInUp col-xl-3 col-lg-4 col-md-6 col-sm-6">
+            <div class="tf-card-box style-1">
+                <div class="card-media">
+                    <a href="#">
+                        <img src="${producto.imagen}" alt="${producto.nombre}">
+                    </a>
+                    <span class="wishlist-button icon-heart"></span>
+                    ${etiqueta ? `
+                        <div class="featured-countdown">
+                            <span class="featured-label">${etiqueta}</span>
+                        </div>
+                    ` : ''}
+                    <div class="button-place-bid">
+                        <a href="#" class="tf-button">
+                            <span>Comprar ahora</span>
                         </a>
-                        <span class="wishlist-button icon-heart"></span>
-                        ${etiqueta ? `
-                            <div class="featured-countdown">
-                                <span class="featured-label">${etiqueta}</span>
-                            </div>
-                        ` : ''}
-                        <div class="button-place-bid">
-                            <a href="#" class="tf-button">
-                                <span>Comprar ahora</span>
-                            </a>
-                        </div>
-                    </div>
-                    <h5 class="name">
-                        <a href="#">${producto.nombre}</a>
-                    </h5>
-                    <div class="author flex items-center">
-                        <div class="avatar">
-                            <img src="img/logos/logosinfondo.png" alt="Lili's Florería">
-                        </div>
-                        <div class="info">
-                            <span>Hecho por:</span>
-                            <h6><a href="#">Lili's Florería</a></h6>
-                        </div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="meta-info flex items-center justify-between">
-                        <span class="text-bid">Precio especial</span>
-                        <h6 class="price gem">$${producto.precio} MXN</h6>
                     </div>
                 </div>
+                <h5 class="name">
+                    <a href="#">${producto.nombre}</a>
+                </h5>
+                <div class="author flex items-center">
+                    <div class="avatar">
+                        <img src="img/logos/logosinfondo.png" alt="Lili's Florería">
+                    </div>
+                    <div class="info">
+                        <span>Hecho por:</span>
+                        <h6><a href="#">Lili's Florería</a></h6>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="meta-info flex items-center justify-between">
+                    <span class="text-bid">Precio especial</span>
+                    <h6 class="price gem">$${producto.precio} MXN</h6>
+                </div>
             </div>
-        `;
-    }
+        </div>
+    `;
+}
+
 
     obtenerEtiqueta(producto) {
         if (producto.masVendido) return 'Más vendido';
@@ -272,12 +273,13 @@ class SistemaFiltros {
         `;
     }
 
-    actualizarContadorResultados(cantidad) {
-        const contador = document.querySelector('#contador-resultados');
-        if (contador) {
-            contador.textContent = `Mostrando ${cantidad} producto${cantidad !== 1 ? 's' : ''}`;
-        }
+actualizarContadorResultados(cantidad) {
+    const contador = document.querySelector('#contador-resultados');
+    if (contador) {
+        contador.textContent = `Mostrando ${cantidad} producto${cantidad !== 1 ? 's' : ''}`;
     }
+}
+
 
     limpiarFiltros() {
         // Resetear filtros a valores por defecto
