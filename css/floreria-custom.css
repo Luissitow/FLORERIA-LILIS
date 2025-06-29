@@ -67,187 +67,50 @@ a:hover {
     }
 }
 
-/* ====== CONTENEDOR DE PRODUCTOS ====== */
 
-/* Grid de productos */
-#productos-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 25px;
-    padding: 20px;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-/* Tarjeta de producto individual */
-.producto-card {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    height: 400px; /* Altura fija para todas las tarjetas */
-}
-
-.producto-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(233, 30, 99, 0.2);
-}
-
-/* Contenedor de la imagen */
-.producto-imagen-container {
+/* Estilos para las imágenes de productos */
+.card-media {
+    width: 100%;
+    height: 290px !important; /* Altura fija para todas las imágenes */
     position: relative;
-    width: 100%;
-    height: 300px; /* Altura fija para todas las imágenes */
     overflow: hidden;
 }
 
-/* Imagen del producto */
-.producto-imagen {
-    position: absolute;
-    top: 0;
-    left: 0;
+.card-media img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Mantiene la proporción y cubre el contenedor */
-    transition: transform 0.3s ease;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
 }
 
-.producto-card:hover .producto-imagen {
-    transform: scale(1.05);
-}
-
-/* Información del producto */
-.producto-info {
-    padding: 15px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.95), white);
-}
-
-.producto-titulo {
-    font-size: 1.1em;
-    margin-bottom: 8px;
-    color: #333;
-    font-weight: 600;
-    line-height: 1.4;
-    /* Evita que títulos largos rompan el diseño */
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.producto-precio {
-    font-size: 1.3em;
-    color: var(--floreria-pink);
-    font-weight: bold;
-    margin-top: auto;
-    padding-top: 10px;
-    border-top: 1px solid rgba(233, 30, 99, 0.1);
-}
-
-/* Responsive Styles */
-/* Tablets (768px a 1024px) */
-@media (max-width: 1024px) {
-    #productos-container {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 20px;
-        padding: 15px;
-    }
-
-    .producto-card {
-        height: 380px;
-    }
-
-    .producto-imagen-container {
-        height: 280px;
-    }
-
-    .producto-titulo {
-        font-size: 1em;
-    }
-
-    .producto-precio {
-        font-size: 1.2em;
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .card-media {
+        height: 100% !important; /* Mantenemos la misma altura en tablets */
     }
 }
 
-/* Tablets pequeñas y celulares grandes (576px a 767px) */
-@media (max-width: 767px) {
-    #productos-container {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 15px;
-        padding: 12px;
-    }
-
-    .producto-card {
-        height: 350px;
-    }
-
-    .producto-imagen-container {
-        height: 250px;
-    }
-
-    .producto-info {
-        padding: 12px;
-    }
-}
-
-/* Celulares (menos de 576px) */
 @media (max-width: 576px) {
-    #productos-container {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 12px;
-        padding: 10px;
-    }
-
-    .producto-card {
-        height: 320px;
-    }
-
-    .producto-imagen-container {
-        height: 220px;
-    }
-
-    .producto-info {
-        padding: 10px;
-    }
-
-    .producto-titulo {
-        font-size: 0.95em;
-        margin-bottom: 6px;
-        -webkit-line-clamp: 2;
-        line-clamp: 2;
-    }
-
-    .producto-precio {
-        font-size: 1.1em;
-        padding-top: 8px;
-    }
-}
-
-/* Celulares pequeños */
-@media (max-width: 375px) {
-    #productos-container {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        padding: 10px;
-    }
-
-    .producto-card {
-        height: auto;
-        max-height: 400px;
-    }
-
-    .producto-imagen-container {
-        height: 250px;
+    .card-media {
+        height: 500px !important; /* Mantenemos la misma altura en móviles */
     }
 }
 
 
+.meta-info .description.gem {
+    color: #ea6ea2;
+    font-family: 'inherit'; 
+ /* Opción 1: elegante y romántica */
+    /* font-family: 'Dancing Script', cursive; */ /* Opción 2: cursiva decorativa */
+    /* font-family: 'Montserrat', sans-serif; */ /* Opción 3: moderna y limpia */
+    font-size: 16.5px;
+    line-height: 1.2;
+    font-weight: 900;
+    margin: 8px 0;
+    letter-spacing: 0.3px;
+}
+
+.meta-info .description.gem i {
+    margin-right: 8px;
+    color: #ea6ea2;
+}

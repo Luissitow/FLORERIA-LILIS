@@ -209,7 +209,7 @@ crearTarjetaProducto(producto, index) {
     const retraso = (index * 0.1).toFixed(1);
 
     return `
-        <div data-wow-delay="${retraso}s" class="wow fadeInUp col-xl-3 col-lg-4 col-md-6 col-sm-6">
+        <div data-wow-delay="${retraso}s" class="wow fadeInUp col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
             <div class="tf-card-box style-1">
                 <div class="card-media">
                     <a href="#">
@@ -223,7 +223,7 @@ crearTarjetaProducto(producto, index) {
                     ` : ''}
                     <div class="button-place-bid">
                         <a href="#" class="tf-button">
-                            <span>Comprar ahora</span>
+                            <span>Cotiza ahora</span>
                         </a>
                     </div>
                 </div>
@@ -240,10 +240,10 @@ crearTarjetaProducto(producto, index) {
                     </div>
                 </div>
                 <div class="divider"></div>
-                <div class="meta-info flex items-center justify-between">
-                    <span class="text-bid">Precio especial</span>
-                    <h6 class="price gem">$${producto.precio} MXN</h6>
+                <div class="meta-info text-center">
+                    <h6 class="description gem"><i class="icon-gem"></i>${producto.descripcion}</h6>
                 </div>
+
             </div>
         </div>
     `;
