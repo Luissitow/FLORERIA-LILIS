@@ -393,8 +393,8 @@
             nombre: "Ramo Día de la Madre",
             imagen: "/img/arreglos/regalodiadelasmadres.jpeg",
             categoria: "ocasiones",
-            subcategoria: "dia-madre",
-            ocasiones: ["dia-madre"],
+            subcategoria: "dia-madres",
+            ocasiones: ["dia-madres"],
             estilo: "tradicional",
             empaque: "papel-coreano",
             tamaño: "mediano",
@@ -472,7 +472,7 @@
             imagen: "/img/arreglos/plantaenmaceta.jpg",
             categoria: "plantas",
             subcategoria: "orquideas",
-            ocasiones: ["dia-madre", "aniversario"],
+            ocasiones: ["dia-madres", "aniversario"],
             estilo: "elegante",
             empaque: "maceta-ceramica",
             tamaño: "mediano",
@@ -544,7 +544,7 @@
             { valor: "cumpleaños", nombre: "Cumpleaños" },
             { valor: "aniversario", nombre: "Aniversario" },
             { valor: "san-valentin", nombre: "San Valentín" },
-            { valor: "dia-madre", nombre: "Día de la Madre" },
+            { valor: "dia-madres", nombre: "Día de la Madre" },
             { valor: "graduaciones", nombre: "Graduaciones" },
             { valor: "bodas", nombre: "Bodas" },
             { valor: "xv-anos", nombre: "XV Años" },
@@ -593,43 +593,58 @@ function obtenerTodosLosProductos() {
 function filtrarProductos(filtros = {}) {
     let productosFiltrados = [...productosFloristeria];
 
+    console.log('🔧 Iniciando filtrado con:', filtros);
+
     if (filtros.categoria && filtros.categoria !== 'todos') {
         productosFiltrados = productosFiltrados.filter(producto => 
             producto.categoria === filtros.categoria
         );
+        console.log(`📂 Después de filtrar por categoría "${filtros.categoria}":`, productosFiltrados.length);
     }
 
     if (filtros.subcategoria && filtros.subcategoria !== 'todas') {
         productosFiltrados = productosFiltrados.filter(producto => 
             producto.subcategoria === filtros.subcategoria
         );
+        console.log(`📁 Después de filtrar por subcategoría "${filtros.subcategoria}":`, productosFiltrados.length);
     }
 
     if (filtros.ocasion && filtros.ocasion !== 'todas') {
-        productosFiltrados = productosFiltrados.filter(producto => 
-            producto.ocasiones.includes(filtros.ocasion)
-        );
+        console.log(`🎉 Filtrando por ocasión: "${filtros.ocasion}"`);
+        const antesDelFiltro = productosFiltrados.length;
+        productosFiltrados = productosFiltrados.filter(producto => {
+            const tieneOcasion = producto.ocasiones.includes(filtros.ocasion);
+            if (tieneOcasion) {
+                console.log(`✅ "${producto.nombre}" tiene la ocasión "${filtros.ocasion}":`, producto.ocasiones);
+            }
+            return tieneOcasion;
+        });
+        console.log(`🎉 Después de filtrar por ocasión "${filtros.ocasion}": ${antesDelFiltro} -> ${productosFiltrados.length}`);
     }
 
     if (filtros.estilo && filtros.estilo !== 'todos') {
         productosFiltrados = productosFiltrados.filter(producto => 
             producto.estilo === filtros.estilo
         );
+        console.log(`🎨 Después de filtrar por estilo "${filtros.estilo}":`, productosFiltrados.length);
     }
 
     if (filtros.empaque && filtros.empaque !== 'todos') {
         productosFiltrados = productosFiltrados.filter(producto => 
             producto.empaque === filtros.empaque
         );
+        console.log(`📦 Después de filtrar por empaque "${filtros.empaque}":`, productosFiltrados.length);
     }
 
     if (filtros.tamaño && filtros.tamaño !== 'todos') {
         productosFiltrados = productosFiltrados.filter(producto => 
             producto.tamaño === filtros.tamaño
         );
+        console.log(`📏 Después de filtrar por tamaño "${filtros.tamaño}":`, productosFiltrados.length);
     }
 
     productosFiltrados = productosFiltrados.filter(producto => producto.disponible);
+    console.log(`✅ Productos disponibles finales:`, productosFiltrados.length);
 
     return productosFiltrados;
 }

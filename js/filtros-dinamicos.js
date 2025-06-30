@@ -99,7 +99,7 @@ class SistemaFiltros {
                 filtro: 'ocasion',
                 mapeo: {
                     'Todas las ocasiones': 'todas',
-                    'Cumpleaños': 'cumpleanos',
+                    'Cumpleaños': 'cumpleaños',
                     'Aniversario': 'aniversario',
                     'San Valentín': 'san-valentin',
                     'Día de las Madres': 'dia-madres',
@@ -176,6 +176,19 @@ class SistemaFiltros {
     aplicarFiltros() {
         // Debug: Mostrar filtros activos antes de aplicar
         console.log('🎯 Aplicando filtros:', {...this.filtrosActivos});
+        
+        // Debug especial para ocasiones
+        if (this.filtrosActivos.ocasion && this.filtrosActivos.ocasion !== 'todas') {
+            const productosConOcasion = window.FloreriaData.productos.filter(p => 
+                p.ocasiones.includes(this.filtrosActivos.ocasion)
+            );
+            console.log(`🔍 Productos con ocasión "${this.filtrosActivos.ocasion}":`, 
+                productosConOcasion.map(p => ({ 
+                    nombre: p.nombre, 
+                    ocasiones: p.ocasiones 
+                }))
+            );
+        }
         
         // 1. Filtrar productos según los filtros activos
         let productosFiltrados = window.FloreriaData.filtrarProductos(this.filtrosActivos);
