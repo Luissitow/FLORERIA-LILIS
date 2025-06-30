@@ -701,6 +701,45 @@ function obtenerProductosRecomendados(limit = 8) {
     return recomendados.slice(0, limit);
 }
 
+// ========== FUNCIONES DE CONTACTO ==========
+
+// Función para abrir WhatsApp con mensaje predefinido
+function abrirWhatsApp(productoNombre = '') {
+    const numeroWhatsApp = '5625144257';
+    let mensaje = 'Hola me podría dar mas información sobre los arreglos florales';
+    
+    // Si se especifica un producto, personalizar el mensaje
+    if (productoNombre) {
+        mensaje = `Hola me podría dar mas información sobre los arreglos florales, específicamente sobre: ${productoNombre}`;
+    }
+    
+    // Codificar el mensaje para URL
+    const mensajeCodificado = encodeURIComponent(mensaje);
+    
+    // Crear la URL de WhatsApp
+    const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`;
+    
+    // Abrir WhatsApp en una nueva ventana/pestaña
+    window.open(urlWhatsApp, '_blank');
+}
+
+// Función para cotizar un producto específico
+function cotizarProducto(nombreProducto) {
+    abrirWhatsApp(nombreProducto);
+}
+
+// Función de contacto general
+function contactarFloristeria() {
+    abrirWhatsApp();
+}
+
+// Hacer las funciones disponibles globalmente
+if (typeof window !== 'undefined') {
+    window.abrirWhatsApp = abrirWhatsApp;
+    window.cotizarProducto = cotizarProducto;
+    window.contactarFloristeria = contactarFloristeria;
+}
+
 if (typeof window !== 'undefined') {
     window.FloreriaData = {
         productos: productosFloristeria,

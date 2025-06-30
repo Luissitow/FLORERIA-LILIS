@@ -265,7 +265,7 @@ crearTarjetaProducto(producto, index) {
                         </div>
                     ` : ''}
                     <div class="button-place-bid">
-                        <a href="#" class="tf-button">
+                        <a href="#" class="tf-button" onclick="cotizarProducto('${producto.nombre}'); return false;">
                             <span>Cotiza ahora</span>
                         </a>
                     </div>
