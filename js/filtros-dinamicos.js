@@ -63,6 +63,13 @@ class SistemaFiltros {
         const dropdownId = dropdown.querySelector('button').id;
         const textoSeleccionado = sortFilter.querySelector('span').textContent.trim();
         
+        // Debug: Mostrar información del filtro seleccionado
+        console.log('🔍 Filtro seleccionado:', {
+            dropdown: dropdownId,
+            texto: textoSeleccionado,
+            filtrosAntesDeActualizar: {...this.filtrosActivos}
+        });
+        
         // Actualizar el texto del botón dropdown
         const botonTexto = dropdown.querySelector('button .inner') || dropdown.querySelector('button span');
         if (botonTexto) {
@@ -71,6 +78,9 @@ class SistemaFiltros {
 
         // Actualizar filtros activos basado en el dropdown
         this.actualizarFiltroActivo(dropdownId, textoSeleccionado);
+        
+        // Debug: Mostrar filtros después de actualizar
+        console.log('📝 Filtros después de actualizar:', {...this.filtrosActivos});
         
         // Aplicar los filtros
         this.aplicarFiltros();
@@ -89,7 +99,7 @@ class SistemaFiltros {
                 filtro: 'ocasion',
                 mapeo: {
                     'Todas las ocasiones': 'todas',
-                    'Cumpleaños': 'cumpleaños',
+                    'Cumpleaños': 'cumpleanos',
                     'Aniversario': 'aniversario',
                     'San Valentín': 'san-valentin',
                     'Día de las Madres': 'dia-madres',
@@ -102,12 +112,17 @@ class SistemaFiltros {
                 filtro: 'estilo',
                 mapeo: {
                     'Todos los estilos': 'todos',
-                    'Ramo buchón': 'ramo-buchon',
-                    'Ramo clásico': 'ramo-clasico',
-                    'Ramo elegante': 'ramo-elegante',
+                    'Ramo buchón': 'buchon',
+                    'Ramo clásico': 'clasico',
+                    'Ramo elegante': 'elegante',
                     'Colorido': 'colorido',
-                    'Caja sorpresa': 'caja-sorpresa',
-                    'Decoración para mesa': 'decoracion-para-mesa'
+                    'Romántico': 'romantico',
+                    'Lujo': 'lujo',
+                    'Moderno': 'moderno',
+                    'Minimalista': 'minimalista',
+                    'Tradicional': 'tradicional',
+                    'Caja sorpresa': 'romantico',
+                    'Decoración para mesa': 'elegante'
                 }
             },
             'dropdownEmpaque': {
@@ -118,7 +133,7 @@ class SistemaFiltros {
                     'En caja': 'en-caja',
                     'Base de cristal': 'base-cristal',
                     'En florero': 'en-florero',
-                    'Con moño personalizado': 'con-moño-personalizado',
+                    'Con moño personalizado': 'con-moño',
                     'Con peluche/globo': 'con-peluche-globo'
                 }
             },
@@ -159,8 +174,23 @@ class SistemaFiltros {
     }
 
     aplicarFiltros() {
+        // Debug: Mostrar filtros activos antes de aplicar
+        console.log('🎯 Aplicando filtros:', {...this.filtrosActivos});
+        
         // 1. Filtrar productos según los filtros activos
         let productosFiltrados = window.FloreriaData.filtrarProductos(this.filtrosActivos);
+        
+        // Debug: Mostrar resultados del filtrado
+        console.log('📊 Productos filtrados:', {
+            total: productosFiltrados.length,
+            productos: productosFiltrados.map(p => ({ 
+                nombre: p.nombre, 
+                estilo: p.estilo, 
+                ocasiones: p.ocasiones,
+                empaque: p.empaque,
+                tamaño: p.tamaño
+            }))
+        });
         
         // 2. Ordenar productos según el criterio seleccionado
         productosFiltrados = window.FloreriaData.ordenarProductos(

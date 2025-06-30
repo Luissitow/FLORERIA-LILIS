@@ -114,3 +114,57 @@ a:hover {
     margin-right: 8px;
     color: #ea6ea2;
 }
+
+/* ====== BOTÓN LIMPIAR FILTROS ====== */
+
+.limpiar-filtros-container {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.limpiar-filtros-container .tf-button {
+    background-color: #f8f9fa;
+    border: 2px solid #E91E63;
+    color: #E91E63;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.limpiar-filtros-container .tf-button:hover {
+    background-color: #E91E63;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(233, 30, 99, 0.3);
+}
+
+.limpiar-filtros-container .tf-button i {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    .limpiar-filtros-container {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
+    }
+    
+    .limpiar-filtros-container .tf-button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .tf-soft {
+        flex-direction: column;
+    }
+    
+    .soft-left {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
