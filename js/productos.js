@@ -22,44 +22,6 @@
             tiempoElaboracion: "2-3 horas"
         },
         {
-            id: 2,
-            nombre: "Ramo Buchón de 12 Rosas",
-            imagen: "/img/arreglos/ramobuchon-12.jpg",
-            categoria: "ramos",
-            subcategoria: "rosas",
-            ocasiones: ["cumpleaños", "aniversario", "san-valentin", "dia-madres"],
-            estilo: "buchon",
-            empaque: "papel-coreano",
-            tamaño: "mediano",
-            cantidadFlores: 12,
-            colores: ["rojo", "rosa", "blanco"],
-            disponible: true,
-            masVendido: false,
-            nuevo: false,
-            oferta: false,
-            descripcion: "Elegante ramo buchón de 12 rosas, ideal para expresar amor y cariño.",
-            tiempoElaboracion: "3-4 horas"
-        },
-        {
-            id: 3,
-            nombre: "Ramo Buchón de 24 Rosas",
-            imagen: "/img/arreglos/ramobuchon-24.jpg",
-            categoria: "ramos",
-            subcategoria: "rosas",
-            ocasiones: ["aniversario", "san-valentin", "bodas", "graduaciones"],
-            estilo: "buchon",
-            empaque: "en-caja",
-            tamaño: "grande",
-            cantidadFlores: 24,
-            colores: ["rojo", "rosa", "blanco"],
-            disponible: true,
-            masVendido: false,
-            nuevo: false,
-            oferta: false,
-            descripcion: "Lujoso ramo buchón de 24 rosas en caja especial.",
-            tiempoElaboracion: "5-6 horas"
-        },
-        {
             id: 4,
             nombre: "Ramo Clásico de Rosas",
             imagen: "/img/arreglos/ramoderosasclasico.jpeg",
@@ -82,7 +44,7 @@
         // ========== RAMOS DE TULIPANES ==========
         {
             id: 5,
-            nombre: "Ramo de Tulipanes Holandeses",
+            nombre: "Ramo de Tulipanes Mixtos",
             imagen: "/img/arreglos/ramodetulipanes.jpg",
             categoria: "ramos",
             subcategoria: "tulipanes",
@@ -99,30 +61,11 @@
             descripcion: "Delicado ramo de tulipanes importados, símbolo de elegancia.",
             tiempoElaboracion: "3-4 horas"
         },
-        {
-            id: 6,
-            nombre: "Ramo de Tulipanes Mixtos",
-            imagen: "/img/arreglos/tulipanes-mixtos.jpg",
-            categoria: "ramos",
-            subcategoria: "tulipanes",
-            ocasiones: ["cumpleaños", "aniversario"],
-            estilo: "colorido",
-            empaque: "papel-coreano",
-            tamaño: "mediano",
-            cantidadFlores: 12,
-            colores: ["multicolor"],
-            disponible: true,
-            masVendido: false,
-            nuevo: false,
-            oferta: false,
-            descripcion: "Mezcla vibrante de tulipanes en diferentes colores.",
-            tiempoElaboracion: "3-4 horas"
-        },
 
         // ========== RAMOS DE GIRASOLES ==========
         {
             id: 7,
-            nombre: "Ramo de Girasoles Medianos",
+            nombre: "Ramo de Girasoles",
             imagen: "/img/arreglos/ramodegirasoles.jpg",
             categoria: "ramos",
             subcategoria: "girasoles",
@@ -138,25 +81,6 @@
             oferta: false,
             descripcion: "Alegre ramo de girasoles frescos, perfecto para transmitir felicidad.",
             tiempoElaboracion: "2-3 horas"
-        },
-        {
-            id: 8,
-            nombre: "Ramo Girasoles con Rosas",
-            imagen: "/img/arreglos/girasoles-rosas.jpg",
-            categoria: "ramos",
-            subcategoria: "girasoles",
-            ocasiones: ["cumpleaños", "aniversario"],
-            estilo: "mixto",
-            empaque: "papel-coreano",
-            tamaño: "mediano",
-            cantidadFlores: 18,
-            colores: ["amarillo", "rosa"],
-            disponible: true,
-            masVendido: false,
-            nuevo: true,
-            oferta: false,
-            descripcion: "Combinación perfecta de girasoles y rosas rosadas.",
-            tiempoElaboracion: "3-4 horas"
         },
 
         // ========== RAMOS DE GERBERAS ==========
@@ -204,7 +128,7 @@
         // ========== RAMOS PERSONALIZADOS ==========
         {
             id: 11,
-            nombre: "Ramo Personalizado Premium",
+            nombre: "Ramo Personalizado",
             imagen: "/img/arreglos/ramospersonalizados.jpeg",
             categoria: "ramos",
             subcategoria: "personalizados",
@@ -243,25 +167,6 @@
             descripcion: "Elegante ramo de novia con rosas blancas y detalles de gypsophila.",
             tiempoElaboracion: "5-6 horas"
         },
-        {
-            id: 13,
-            nombre: "Ramo de Novia Rústico",
-            imagen: "/img/arreglos/ramo-novia-rustico.jpg",
-            categoria: "bodas",
-            subcategoria: "ramos-novia",
-            ocasiones: ["bodas"],
-            estilo: "rustico",
-            empaque: "con-cinta",
-            tamaño: "mediano",
-            cantidadFlores: 25,
-            colores: ["blanco", "verde"],
-            disponible: true,
-            masVendido: false,
-            nuevo: true,
-            oferta: false,
-            descripcion: "Ramo de novia estilo rústico con flores de campo y follaje natural.",
-            tiempoElaboracion: "4-5 horas"
-        },
 
         // ========== CAJAS SORPRESA ==========
         {
@@ -285,8 +190,8 @@
         },
         {
             id: 15,
-            nombre: "Caja Sorpresa Premium",
-            imagen: "/img/arreglos/cajasorpresa1.jpeg",
+            nombre: "Caja Sorpresa",
+            imagen: "/img/arreglos/cajasorpresa2.jpeg",
             categoria: "regalos",
             subcategoria: "cajas-sorpresa",
             ocasiones: ["san-valentin", "aniversario"],
@@ -327,10 +232,10 @@
         {
             id: 17,
             nombre: "Centro de Mesa Moderno",
-            imagen: "/img/arreglos/centro-moderno.jpg",
+            imagen: "/img/arreglos/centrodemesamoderno.jpeg",
             categoria: "centros-mesa",
             subcategoria: "modernos",
-            ocasiones: ["eventos-corporativos", "bodas"],
+            ocasiones: ["eventos-corporativos"],
             estilo: "moderno",
             empaque: "base-metal",
             tamaño: "mediano",
@@ -368,7 +273,7 @@
         {
             id: 19,
             nombre: "Decoración para XV Años",
-            imagen: "/img/arreglos/decoracion-xv.jpg",
+            imagen: "/img/arreglos/decoracion15anos.jpeg",
             categoria: "eventos",
             subcategoria: "xv-anos",
             ocasiones: ["xv-anos"],
@@ -387,7 +292,7 @@
         {
             id: 20,
             nombre: "Decoración para Baby Shower",
-            imagen: "/img/arreglos/decoracion-baby.jpg",
+            imagen: "/img/arreglos/decoracionbabyshower.jpeg",
             categoria: "eventos",
             subcategoria: "baby-shower",
             ocasiones: ["baby-shower"],
@@ -408,7 +313,7 @@
         {
             id: 21,
             nombre: "Combo Flores + Chocolates",
-            imagen: "/img/arreglos/flores-chocolates.jpg",
+            imagen: "/img/arreglos/floresconchocolates.png",
             categoria: "regalos",
             subcategoria: "combos",
             ocasiones: ["san-valentin", "aniversario", "cumpleaños"],
@@ -427,7 +332,7 @@
         {
             id: 22,
             nombre: "Arreglo con Peluche",
-            imagen: "/img/arreglos/flores-peluche.jpg",
+            imagen: "/img/arreglos/floresconpeluche.jpg",
             categoria: "regalos",
             subcategoria: "combos",
             ocasiones: ["san-valentin", "cumpleaños"],
@@ -446,7 +351,7 @@
         {
             id: 23,
             nombre: "Flores + Vino Espumoso",
-            imagen: "/img/arreglos/flores-vino.jpg",
+            imagen: "/img/arreglos/cajasorpresaconvino.jpeg",
             categoria: "regalos",
             subcategoria: "combos",
             ocasiones: ["aniversario", "cumpleaños"],
@@ -486,7 +391,7 @@
         {
             id: 25,
             nombre: "Ramo Día de la Madre",
-            imagen: "/img/arreglos/dia-madre.jpg",
+            imagen: "/img/arreglos/regalodiadelasmadres.jpeg",
             categoria: "ocasiones",
             subcategoria: "dia-madre",
             ocasiones: ["dia-madre"],
@@ -525,7 +430,7 @@
         {
             id: 26,
             nombre: "Arreglo de Condolencias",
-            imagen: "/img/arreglos/condolencias.jpg",
+            imagen: "/img/arreglos/regalodecondolencias.jpg",
             categoria: "ocasiones",
             subcategoria: "condolencias",
             ocasiones: ["condolencias"],
@@ -563,8 +468,8 @@
         // ========== PLANTAS Y JARDINERÍA ==========
         {
             id: 27,
-            nombre: "Orquídea en Maceta",
-            imagen: "/img/arreglos/orquidea.jpg",
+            nombre: "Plantas en Maceta",
+            imagen: "/img/arreglos/plantaenmaceta.jpg",
             categoria: "plantas",
             subcategoria: "orquideas",
             ocasiones: ["dia-madre", "aniversario"],
@@ -577,34 +482,14 @@
             masVendido: true,
             nuevo: false,
             oferta: false,
-            descripcion: "Hermosa orquídea en maceta de cerámica, duradera y elegante.",
+            descripcion: "Cualquier planta en maceta",
             tiempoElaboracion: "1-2 horas",
             tipoPlanta: "orquidea-phalaenopsis"
         },
         {
-            id: 28,
-            nombre: "Kit Suculentas",
-            imagen: "/img/arreglos/suculentas.jpg",
-            categoria: "plantas",
-            subcategoria: "suculentas",
-            ocasiones: ["cumpleaños", "graduaciones"],
-            estilo: "moderno",
-            empaque: "caja-madera",
-            tamaño: "pequeño",
-            cantidadFlores: 3,
-            colores: ["verde"],
-            disponible: true,
-            masVendido: false,
-            nuevo: true,
-            oferta: false,
-            descripcion: "Tres suculentas diferentes en arreglo decorativo.",
-            tiempoElaboracion: "2-3 horas",
-            tipoPlanta: "suculentas-variadas"
-        },
-        {
             id: 29,
-            nombre: "Bonsái Decorativo",
-            imagen: "/img/arreglos/bonsai.jpg",
+            nombre: "Plantas Decorativas",
+            imagen: "/img/arreglos/plantasdecorativas.webp",
             categoria: "plantas",
             subcategoria: "bonsais",
             ocasiones: ["aniversario", "eventos-corporativos"],
@@ -617,7 +502,7 @@
             masVendido: false,
             nuevo: true,
             oferta: false,
-            descripcion: "Hermoso bonsái para decoración de interiores.",
+            descripcion: "Plantas para decoración de interiores.",
             tiempoElaboracion: "1-2 horas",
             tipoPlanta: "ficus-bonsai"
         },
@@ -642,25 +527,6 @@
             descripcion: "Arreglo festivo con flores de temporada y detalles navideños.",
             tiempoElaboracion: "5-6 horas"
         },
-        {
-            id: 31,
-            nombre: "Arreglo de Pascua",
-            imagen: "/img/arreglos/pascua.jpg",
-            categoria: "temporada",
-            subcategoria: "pascua",
-            ocasiones: ["pascua"],
-            estilo: "colorido",
-            empaque: "canasta",
-            tamaño: "mediano",
-            cantidadFlores: 12,
-            colores: ["amarillo", "blanco", "verde"],
-            disponible: true,
-            masVendido: false,
-            nuevo: true,
-            oferta: false,  
-            descripcion: "Colorido arreglo primaveral para celebrar la Pascua.",
-            tiempoElaboracion: "3-4 horas"
-        }
     ];
     // Configuración de filtros disponibles (Actualizada)
     const filtrosDisponibles = {
