@@ -725,7 +725,7 @@ input[type="submit"] {
     font-weight       : 700;
     font-size         : 14px;
     line-height       : 22px;
-    background-color  : rgba(221, 242, 71, 1);
+    background-color  : ea6ea2;
     color             : rgba(22, 22, 22, 1);
     border-radius     : 14px;
     padding           : 10px;
@@ -745,7 +745,7 @@ input.style-1[type="submit"] {
     font-weight       : 700;
     font-size         : 14px;
     line-height       : 22px;
-    color             : rgba(221, 242, 71, 1);
+    color             : ea6ea2;
     background-color  : rgba(22, 22, 22, 1);
     border-radius     : 14px;
     padding           : 10px;
@@ -770,7 +770,7 @@ input[type="submit"]:focus {
     outline: 0;
     border: none;
     background-color: rgba(22, 22, 22, 1);
-    color: rgba(221, 242, 71, 1);
+    color: ea6ea2;
 }
 
 button.style-1:hover,
@@ -784,7 +784,7 @@ input.style-1[type="submit"]:focus {
     outline: 0;
     border: none;
     color: rgba(22, 22, 22, 1);
-    background-color: rgba(221, 242, 71, 1);
+    background-color: ea6ea2;
 }
 
 .btn-submit button[type="submit"]:hover {
@@ -1177,7 +1177,7 @@ a:focus {
 }
 
 .canvas.style-1::after {
-    background-color: rgba(221, 242, 71, 1);
+    background-color: ea6ea2;
 }
 
 .header-search.style-1 .show-search {

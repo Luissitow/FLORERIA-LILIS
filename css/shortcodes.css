@@ -2125,7 +2125,7 @@
 }
 
 .tf-soft .soft-right input:checked[type=checkbox]::before {
-    background: rgba(221, 242, 71, 1);
+    background: ea6ea2;
     left: 14px;
 }
 
@@ -2351,7 +2351,7 @@
     padding: 50px 40px;
     margin-left: 5px;
     margin-right: 5px;
-    background-color: rgba(221, 242, 71, 1);
+    background-color: ea6ea2;
     border-radius: 30px;
     overflow: hidden;
     position: relative;
@@ -2375,7 +2375,7 @@
 
 .tf-button.style-2 {
     background-color: rgba(22, 22, 22, 1);
-    color: rgba(221, 242, 71, 1);
+    color: rgb(242, 71, 165);
     gap: 10px;
     flex-shrink: 0;
 }
@@ -3523,7 +3523,7 @@ form label i.icon-star {
 }
 
 form label i.icon-star.active {
-    color: rgba(221, 242, 71, 1);
+    color: ea6ea2;
 }
 
 /* style-1 */
@@ -4310,7 +4310,7 @@ button.follow:hover {
 }
 
 .widget-edit.setting input:checked[type=checkbox]::before {
-    background: rgba(221, 242, 71, 1);
+    background: ea6ea2;
     left: 30px;
 }
 
@@ -4557,7 +4557,7 @@ button.follow:hover {
 
 .flat-accordion .flat-toggle .toggle-title.active ,
 .flat-accordion2 .flat-toggle2 .toggle-title.active {
-    color: rgba(221, 242, 71, 1);
+    color: ea6ea2;
 }
 
 .flat-accordion .flat-toggle .toggle-title::after ,
