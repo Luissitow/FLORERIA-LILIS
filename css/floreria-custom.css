@@ -45,11 +45,6 @@
     --floreria-pink-dark: #C2185B;
 }
 
-/* Botones principales con tema rosa */
-.tf-button.style-1:hover {
-    background-color: var(--floreria-pink) !important;
-    border-color: var(--floreria-pink) !important;
-}
 
 /* Enlaces y elementos interactivos */
 a:hover {
@@ -125,17 +120,24 @@ a:hover {
 
 .limpiar-filtros-container .tf-button {
     background-color: #f8f9fa;
-    border: 2px solid #E91E63;
-    color: #E91E63;
-    font-weight: 600;
+    border: 2px solid #ca2f70;
+    color: #ca2f70;
     padding: 10px 20px;
     border-radius: 8px;
     transition: all 0.3s ease;
     white-space: nowrap;
+
+    /* Estilos de tipografía personalizados */
+    font-family: 'Playfair Display', serif; /* o cualquier fuente que prefieras */
+    font-size: 10px; /* Tamaño de fuente */
+    font-weight: 600; /* Peso de la fuente */
+    letter-spacing: 0.5px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-style: normal; /* normal, italic, oblique */
 }
 
 .limpiar-filtros-container .tf-button:hover {
-    background-color: #E91E63;
+    background-color: #ca2f70;
     color: white;
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(233, 30, 99, 0.3);

@@ -170,25 +170,6 @@
 
         // ========== CAJAS SORPRESA ==========
         {
-            id: 14,
-            nombre: "Caja Sorpresa de Rosas",
-            imagen: "/img/arreglos/cajasorpresa.jpg",
-            categoria: "regalos",
-            subcategoria: "cajas-sorpresa",
-            ocasiones: ["cumpleaños", "aniversario", "san-valentin"],
-            estilo: "romantico",
-            empaque: "en-caja",
-            tamaño: "mediano",
-            cantidadFlores: 18,
-            colores: ["rojo", "rosa"],
-            disponible: true,
-            masVendido: true,
-            nuevo: false,
-            oferta: false,
-            descripcion: "Hermosa caja sorpresa con rosas frescas y detalles especiales.",
-            tiempoElaboracion: "3-4 horas"
-        },
-        {
             id: 15,
             nombre: "Caja Sorpresa",
             imagen: "/img/arreglos/cajasorpresa2.jpeg",
@@ -466,26 +447,6 @@
             tiempoElaboracion: "4-6 horas"
         },
         // ========== PLANTAS Y JARDINERÍA ==========
-        {
-            id: 27,
-            nombre: "Plantas en Maceta",
-            imagen: "/img/arreglos/plantaenmaceta.jpg",
-            categoria: "plantas",
-            subcategoria: "orquideas",
-            ocasiones: ["dia-madres", "aniversario"],
-            estilo: "elegante",
-            empaque: "maceta-ceramica",
-            tamaño: "mediano",
-            cantidadFlores: 1,
-            colores: ["blanco", "rosa", "morado"],
-            disponible: true,
-            masVendido: true,
-            nuevo: false,
-            oferta: false,
-            descripcion: "Cualquier planta en maceta",
-            tiempoElaboracion: "1-2 horas",
-            tipoPlanta: "orquidea-phalaenopsis"
-        },
         {
             id: 29,
             nombre: "Plantas Decorativas",
